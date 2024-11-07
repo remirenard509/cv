@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="photo.png" width="100px" alt="photo" id="image">
+        <h1 id="name">Rémi RENARD</h1>
+        <h2 id="titre">Développeur full stack</h2>
+    </header>
+    <div id="intro">
+        <p>Après avoir enseigné les mathématiques, je suis actuellement en
+            reconversion dans le domaine de l'informatique à l'école Coda.</p>
+    </div>
+    <article>
+        <div id="coordonnees">
+            <p><a href="mailto:remi.renard@coda-student.school">remi.renard@coda-student.school</a></p>
+            <p><a href="tel:+33658409518"> 0658409518</a></p>
+            <p>orléans</p>
+            <p>permis B</p>
+            <p> véhicule personnel</p>
+            <p><a href="https://www.linkedin.com/in/remi-renard-5bb966200" target="_blank">mon linkedin</a></p>
+            <p><a href="lettre de motivation.html">ma lettre de motivation</a></p>
+        </div>
+    </article>
+    <article3>
+        <article2 id="exp">
+            <h3>expériences professionnnelles</h3>
+            <ul>
+                <li>stages d'informatique</li>
+                <ul>
+                    <li class="small">J'ai effectué deux stages d'une journée en géomatique et en base de données
+                        dans le but de confirmer mon projet professionnel.</li>
+                    <li class="small">INRAE nov 2023</li>
+                </ul>
+                <li>enseignant de mathématiques</li>
+                <ul>
+                    <li class="small">ACADOMIA nov 23 à juin 24</li>
+                </ul>
+                <li>activité d'intérim</li>
+                <ul>
+                    <li class="small">Manutentionnaire chez chronopost. Paysagiste chez Bourdin paysage.<br> Poste
+                        réception citerne chez Antartic. Manutentionnaire chez les Crudettes.
+                    </li>
+                    <li class="small">ADECCO dec 20 à sept 23</li>
+                </ul>
+                <li>enseignant de mathématiques et de sciences numériques et technologiques</li>
+                <ul>
+                    <li class="small">Lycée jacques monod sept 19 à sept 20</li>
+                </ul>
+            </ul>
+            <h3>diplômes et formation</h3>
+            <ul>
+                <li>bachelor développeur full stack</li>
+                <ul>
+                    <li class="small">CODA depuis sept 24</li>
+                </ul>
+                <li>création de site web avec wordpress</li>
+                <ul>
+                    <li class="small">Formation pôle emploi</li>
+                </ul>
+                <li>master d'enseignement de mathématiques</li>
+                <ul>
+                    <li class="small">université d'orléans</li>
+                </ul>
+                <li>capes de mathématiques</li>
+                <li>licence de mathématiques</li>
+                <ul>
+                    <li class="small">université de Perpignan</li>
+                </ul>
+                <li>prépa physique technique</li>
+                <ul>
+                    <li class="small">Lycée Paul Constans à Montluçon</li>
+                </ul>
+            </ul>
+        </article2>
+        <article1 id="competence">
+            <div>
+                <h3>Hard skills</h3>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>c</li>
+                    <li>figma</li>
+                    <li>word press</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>adaptabilité</li>
+                    <li>autonomie</li>
+                    <li>gestion du stress</li>
+                    <li>empathie</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Langues</h3>
+                <ul>
+                    <li>Anglais B2</li>
+
+                </ul>
+            </div>
+            <div>
+                <h3>centre d'intérêt</h3>
+                <ul>
+                    <li>guitare</li>
+                    <li>echecs</li>
+                </ul>
+            </div>
+
+        </article1>
+
+    </article3>
+    <button class="contact-button" onclick="openPopup()">Me Contacter</button>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <h2>Contactez-moi</h2>
+            <p>Veuillez remplir le formulaire ci-dessous pour me contacter.</p>
+            <!-- Formulaire de contact -->
+            <form>
+                <input type="text" placeholder="Votre Nom"
+                    style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px;">
+                <input type="email" placeholder="Votre Email"
+                    style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px;">
+                <textarea placeholder="Votre Message"
+                    style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px;"></textarea>
+                <button type="submit" class="contact-button" style="width: 100%;">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popupOverlay').classList.add('active');
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+        }
+    </script>
+
+</body>
+
+</html>
